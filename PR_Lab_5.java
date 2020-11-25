@@ -34,5 +34,22 @@ public class PR_Lab_5{
 		firstDynamicArray.get(1).initBuilding();
 		firstDynamicArray.get(0).addToBuilding(firstDynamicArray.get(1));
 		/*...............................*/
+				
+		/* Массив объектов. */
+		Building[] firstArrayOfDyn = new Building[amount];
+		Building[] secondArrayOfDyn = new Building[amount];
+		for (int i = 0; i < amount; i++)
+		{
+			firstArrayOfDyn[i] = new Building();
+			secondArrayOfDyn[i] = new Building();
+		}
+
+		System.out.println("\nМассив объектов: ");
+
+		firstArrayOfDyn[0].inputBuilding();
+		secondArrayOfDyn[1].initBuilding();
+
+		firstArrayOfDyn[0].addToBuilding(secondArrayOfDyn[1]);
+		/*..............................*/
 	}
 }
