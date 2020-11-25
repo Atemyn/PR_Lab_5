@@ -20,5 +20,19 @@ public class PR_Lab_5{
 		firstBuilding.addFloors();
 		firstBuilding.removeFloors();
 		/*............................................*/
+				
+		/* Список объектов. */
+		int amount = 2;
+		ArrayList<Building> firstDynamicArray = new ArrayList<>();
+		Building helpBuilding = new Building();
+
+		System.out.println("\nСписок объектов: ");
+
+		firstDynamicArray.add(new Building());
+		firstDynamicArray.get(0).inputBuilding();
+		firstDynamicArray.add(new Building());
+		firstDynamicArray.get(1).initBuilding();
+		firstDynamicArray.get(0).addToBuilding(firstDynamicArray.get(1));
+		/*...............................*/
 	}
 }
