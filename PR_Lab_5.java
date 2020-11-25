@@ -51,5 +51,15 @@ public class PR_Lab_5{
 
 		firstArrayOfDyn[0].addToBuilding(secondArrayOfDyn[1]);
 		/*..............................*/
+				
+		/* Новые функции Ассоциации. */
+		Building building = new Building();
+		System.out.println("\nНовые функции Ассоциации: ");
+
+		building.inputBuilding();
+
+		building.openWindowsOnFacade();
+		building.closeWindowsOnFacade();
+		/*..........................*/
 	}
 }
